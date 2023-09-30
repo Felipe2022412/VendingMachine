@@ -8,6 +8,20 @@ package vendingmachine;
  *
  * @author felip
  */
-public class Jelly {
+public class Jelly extends Products{
+    
+    boolean selected;
+    
+    public Jelly(String name, int locationMachine, double price) {
+        super(name, locationMachine, price);
+    }
+    
+    
+    public void select(boolean selected) {
+        if (selected) {
+            System.out.println("Enjoy your " + this.name);
+
+        }
+    }
     
 }

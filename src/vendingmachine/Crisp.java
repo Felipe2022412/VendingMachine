@@ -8,6 +8,20 @@ package vendingmachine;
  *
  * @author felip
  */
-public class Crisp {
+public class Crisp extends Products{
+    
+    boolean selected;
+    
+    public Crisp(String name, int locationMachine, double price) {
+        super(name, locationMachine, price);
+    }
+    
+    
+    public void select(boolean selected) {
+        if (selected) {
+            System.out.println("Enjoy your " + this.name);
+
+        }
+    }
     
 }

@@ -8,6 +8,18 @@ package vendingmachine;
  *
  * @author felip
  */
-public class Chocolate {
-    
+public class Chocolate extends Products {
+
+    boolean selected;
+
+    public Chocolate(String name, int locationMachine, double price) {
+        super(name, locationMachine, price);
+    }
+
+    public void select(boolean selected) {
+        if (selected) {
+            System.out.println("Enjoy your " + this.name);
+
+        }
+    }
 }

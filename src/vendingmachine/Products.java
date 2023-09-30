@@ -10,28 +10,18 @@ package vendingmachine;
  */
 public class Products {
 
-    private String name;
+    public String name;
     private int locationMachine;
-    private int price;
-    private boolean selected;
+    private double price;
+  
 
-    public Products(String name, int locationMachine, int price) {
+    public Products(String name, int locationMachine, double price) {
         this.name = name;
         this.locationMachine = locationMachine;
         this.price = price;
     }
 
-    public void setLocationMachine(int locationMachine) {
-        this.locationMachine = locationMachine;
+    public String getName() {
+        return name;
     }
-    
-    public void select(boolean selected){
-    if(selected){
-        System.out.println("Enjoy your " + this.name);
-       
-   
-    
-    }
-    
-
-}}
+}
